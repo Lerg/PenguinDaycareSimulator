@@ -16,9 +16,9 @@ function scene:createScene(event)
     local ind = event.params
     local p = app.api.penguins[ind]
 
-    local visitsLabel = app.newText{g = group, x = _CX, y = _T + 50, text = 'Visits: ' .. p.visit_count, size = 18, color = 'white'}
-    local fishLabel = app.newText{g = group, x = _CX, y = _T + 70, text = 'Fish: ' .. p.fish_count, size = 18, color = 'white'}
-    local bellyrubsLabel = app.newText{g = group, x = _CX, y = _T + 90, text = 'Belly rubs: ' .. p.bellyrub_count, size = 18, color = 'white'}
+    local visitsLabel = app.newText{g = group, x = _CX, y = _T + 20, text = 'Visits: ' .. p.visit_count, size = 18, color = 'white'}
+    local fishLabel = app.newText{g = group, x = _CX, y = _T + 40, text = 'Fish: ' .. p.fish_count, size = 18, color = 'white'}
+    local bellyrubsLabel = app.newText{g = group, x = _CX, y = _T + 60, text = 'Belly rubs: ' .. p.bellyrub_count, size = 18, color = 'white'}
     local penguin = app.newImage('images/penguins/' .. p.id .. '.png', {g = group, w = 200, h = 256, x = _CX, y = _CY - 25})
 
     app.newButton{g = group, x = _CX - 80, y = _B - 50, w = 128, h = 48,
